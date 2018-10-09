@@ -2,7 +2,7 @@ var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
 
-document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("deviceready", onDeviceReady, false); //Prepares device
 		
 	
 function updateDisplay() {
@@ -16,8 +16,8 @@ function updateDisplay() {
 //
     function onDeviceReady() {
 	
-	document.addEventListener("resume", onResume, false);
-	document.addEventListener("pause", onPause, false);
+	document.addEventListener("resume", onResume, false); //Creates event for alert message
+	document.addEventListener("pause", onPause, false); //Creates event for alert message
 	
 	launched_count++;
 	updateDisplay();
